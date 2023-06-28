@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>STEM ZONE | Courses</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+        <link
+            href="img/apple-touch-icon.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+        />
+        <link
+            href="img/favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+            type="image/png"
+        />
+        <link
+            href="img/favicon-16x16.png"
+            rel="icon"
+            sizes="16x16"
+            type="image/png"
+        />
+        <link <link rel="manifest" href="{{asset('img/site.webmanifest')}}" />
+        rel="manifest">
+        <!-- Google Web Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="../lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="../lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="../css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container-xxl bg-white p-0">
+            <!-- Spinner Start -->
+            <div
+                class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+                id="spinner"
+            >
+                <div
+                    class="spinner-grow text-primary"
+                    role="status"
+                    style="width: 3rem; height: 3rem"
+                >
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+
+            <!-- Navbar & Hero Start -->
+            <div class="container-xxl position-relative p-0">
+                <nav
+                    class="navbar navbar-expand-lg navbar-light m-auto text-center px-4 px-lg-5 py-3 py-lg-0"
+                >
+                    <a class="navbar-brand p-0 px-5" href="{{route('home')}}">
+                        <!-- <h1 class="m-0">STEM Zone<span class="fs-5"></span></h1> -->
+                        <img
+                            alt="Logo"
+                            class="px-5"
+                            src="{{asset('img/Asset 4 (1).png')}}"
+                            width=""
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        data-bs-target="#navbarCollapse"
+                        data-bs-toggle="collapse"
+                        type="button"
+                    >
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto py-0">
+                            <a
+                                class="nav-item nav-link"
+                                href="https://stemzone.online"
+                                >Home</a
+                            >
+                            <a
+                                class="nav-item nav-link"
+                                href="{{route('about')}}"
+                                >About</a
+                            >
+                            <a
+                                class="nav-item nav-link active"
+                                href="{{route('courses')}}"
+                                >Courses</a
+                            >
+                            <a
+                                class="nav-item nav-link"
+                                href="{{route('events')}}"
+                                >Camp</a
+                            >
+                            <a
+                                class="nav-item nav-link"
+                                href="{{route('team')}}"
+                                >Our Team</a
+                            >
+                            <a
+                                class="nav-item nav-link"
+                                href="{{route('contact')}}"
+                                >Contact</a
+                            >
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                    <div class="container my-5 py-5 px-lg-5">
+                        <div class="row g-5 py-5">
+                            <div class="col-12 text-center">
+                                <h1 class="text-white animated zoomIn">
+                                    Python Turtle
+                                </h1>
+                                <hr
+                                    class="bg-white mx-auto mt-0"
+                                    style="width: 90px"
+                                />
+                                <nav aria-label="breadcrumb">
+                                    <ol
+                                        class="breadcrumb justify-content-center"
+                                    >
+                                        <li class="breadcrumb-item">
+                                            <a
+                                                class="text-white"
+                                                href="{{route('home')}}"
+                                                >Home</a
+                                            >
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a
+                                                class="text-white"
+                                                href="{{route('courses')}}"
+                                                >Courses</a
+                                            >
+                                        </li>
+                                        <li
+                                            aria-current="page"
+                                            class="breadcrumb-item text-white active"
+                                        >
+                                            Python Turtle
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar & Hero End -->
+
+            <!-- Service Start -->
+            <div class="container-xxl py-5">
+                <div class="container px-lg-5">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="wow fadeInLeft">
+                                <img
+                                    alt=""
+                                    class="img-fluid rounded"
+                                    src="../images/turtle-1.webp"
+                                />
+                            </div>
+                            <div class="">
+                                <div
+                                    class="section-title position-relative mb-2 pt-5 pb-2 wow fadeInUp"
+                                    data-wow-delay="0.1s"
+                                >
+                                    <h3>COURSE INFORMATION</h3>
+                                </div>
+                                <div
+                                    class="content wow fadeInUp my-3"
+                                    data-wow-delay="0.2s"
+                                >
+                                    Turtle is a pre-installed Python library
+                                    that enables users to create images and
+                                    shapes by providing them with a virtual
+                                    board. The on-screen pen you use to draw is
+                                    called the turtle and that’s what gives the
+                                    library its name. In short, the Python
+                                    turtle library helps new programmers learn
+                                    what programming with Python is like in a
+                                    fun and interactive way. Turtles are mainly
+                                    used to introduce children to the computer
+                                    world. It’s a straightforward yet versatile
+                                    way to understand Python concepts. This
+                                    makes it a great way for kids to take their
+                                    first steps in Python programming.
+                                    <br />
+                                    <br />
+                                    The first thing you will learn when it comes
+                                    to programming with the Python turtle
+                                    library is how to make the turtle move in
+                                    the direction you want it to. Next, you will
+                                    learn how to customize your turtle and its
+                                    environment. Finally, you will learn two
+                                    additional things with which you can perform
+                                    some special tasks.
+                                </div>
+                            </div>
+                            <div class="">
+                                <div
+                                    class="section-title position-relative mb-2 pt-5 pb-2 wow fadeInUp"
+                                    data-wow-delay="0.1s"
+                                >
+                                    <h3>COURSE CONTENT</h3>
+                                </div>
+                                <div
+                                    class="content position-relative mt-5 pb-2 wow fadeInUp"
+                                    data-wow-delay="0.4s"
+                                >
+                                    <h6
+                                        class="position-relative text-primary ps-4"
+                                    >
+                                        Level 1
+                                    </h6>
+                                    <div class="px-5">
+                                        <p>
+                                            Using Python Turtle to create shapes
+                                            and images by moving a virtual
+                                            turtle on the screen.
+                                        </p>
+                                        <p>
+                                            Understanding the coordinate system
+                                        </p>
+                                        <p>
+                                            How to control the turtle’s
+                                            movement, pen color, and size.
+                                        </p>
+                                        <p>Drawing lines and shapes</p>
+                                        <p>
+                                            Understanding loops, conditionals
+                                            and functions
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="content position-relative pb-2 wow fadeInUp"
+                                    data-wow-delay="0.5s"
+                                >
+                                    <h6
+                                        class="position-relative text-primary ps-4"
+                                    >
+                                        Level 2
+                                    </h6>
+                                    <div class="px-5">
+                                        <p>
+                                            How to use loops and conditionals to
+                                            create more complex drawings and
+                                            animations.
+                                        </p>
+                                        <p>
+                                            Basic geometry concepts, such as
+                                            turning angles and line lengths,
+                                            which can help students understand
+                                            the math behind the drawings they
+                                            create.
+                                        </p>
+                                        <p>
+                                            How to design and create interactive
+                                            games
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="row col-lg-4 wow fadeInUp d-none d-md-block"
+                                data-wow-delay="0.9s"
+                            >
+                                <button
+                                    class="btn btn-primary rounded py-3 px-5"
+                                    onclick="firstStep()"
+                                >
+                                    Enroll the course
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 wow fadeInRight">
+                            <div class="row right-contents">
+                                <ul>
+                                    <li>
+                                        <a
+                                            class="justify-content-between d-flex"
+                                        >
+                                            <p>Level</p>
+                                            <span class="or">Beginner </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="justify-content-between d-flex"
+                                        >
+                                            <p>Weekly Hours</p>
+                                            <span>3 hours</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="justify-content-between d-flex"
+                                        >
+                                            <p>Age</p>
+                                            <span>+10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="justify-content-between d-flex"
+                                        >
+                                            <p>Language</p>
+                                            <span>Arabic, English</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="justify-content-between d-flex"
+                                        >
+                                            <p>Course Fee</p>
+                                            <span>EGP700.00</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mx-2">
+                                <button
+                                    class="btn btn-primary rounded py-3 px-5"
+                                    onclick="firstStep()"
+                                >
+                                    Enroll the course
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+
+            <!-- Footer Start -->
+            <div
+                class="container-fluid bg-primary text-light footer mt-5 wow fadeIn"
+                data-wow-delay="0.1s"
+            >
+                <div class="container py-2 px-lg-5">
+                    <div class="row g-5 m-auto">
+                        <div class="col-md-6 col-lg-5">
+                            <h5 class="text-white mb-4">Our Vision</h5>
+                            <p class="">
+                                Empower kids with coding, No matter what kind of
+                                employment a young person wants to pursue, they
+                                all need to learn how to code. Coding is a new
+                                form of literacy. Our lessons turn tech-addicted
+                                children into inventive, engaged creators who
+                                express themselves through coding.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <h5 class="text-white mb-4">Popular Link</h5>
+                            <a class="btn btn-link" href="{{route('about')}}"
+                                >About Us</a
+                            >
+                            <a class="btn btn-link" href="{{route('contact')}}"
+                                >Contact Us</a
+                            >
+                            <a class="btn btn-link" href=".{{route('courses')}}"
+                                >Courses</a
+                            >
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <h5 class="text-white mb-4">Get In Touch</h5>
+                            <p class="fs-6">
+                                <i class="fa fa-map-marker-alt me-3"></i>74
+                                Housny Mobarak, Sheraton Al Matar, El Nozha,
+                                Cairo Governorate, Egypt
+                            </p>
+                            <p>
+                                <i class="fa fa-phone-alt me-3"></i>+20 109 383
+                                8808
+                            </p>
+                            <p>
+                                <i class="fa fa-phone-alt me-3"></i>+20 112 571
+                                2666
+                            </p>
+                            <p>
+                                <i class="fa fa-envelope me-3"></i
+                                ><a
+                                    class="mail"
+                                    href="mailto:info@stemzone.online"
+                                    >info@stemzone.online</a
+                                >
+                            </p>
+                            <div class="d-flex pt-2">
+                                <a
+                                    class="btn btn-outline-light btn-social"
+                                    href="https://api.whatsapp.com/message/6BRILOY7YHMTJ1?autoload=1&app_absent=0"
+                                    ><i class="fab fa-whatsapp"></i
+                                ></a>
+                                <a
+                                    class="btn btn-outline-light btn-social"
+                                    href="https://www.facebook.com/Stemzone2022"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                                <a
+                                    class="btn btn-outline-light btn-social"
+                                    href="https://instagram.com/stem_zone?igshid=YmMyMTA2M2Y"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                                <a
+                                    class="btn btn-outline-light btn-social"
+                                    href="https://www.linkedin.com/company/stem-zone/"
+                                    ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-lg-5">
+                    <div class="copyright">
+                        <div class="row">
+                            <div
+                                class="col-md-6 text-center text-md-start mb-3 mb-md-0"
+                            >
+                                &copy;
+                                <a class="border-bottom" href="#">STEM Zone</a>,
+                                All Right Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <!-- Back to Top -->
+            <a
+                class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
+                href="#"
+                ><i class="bi bi-arrow-up"></i
+            ></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{{asset("lib/wow/wow.min.js")}}"></script>
+        <script src="{{asset('lib/easing/easing.min.js')}}"></script>
+        <script src="{{asset('lib/waypoints/waypoints.min.js')}}"></script>
+        <script src="{{asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('lib/isotope/isotope.pkgd.min.js')}}"></script>
+        <script src="{{asset('lib/lightbox/js/lightbox.min.js')}}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{{asset('js/main.js')}}"></script>
+        <!-- Backend -->
+        <script src="{{asset('js/payment.js')}}"></script>
+    </body>
+</html>
